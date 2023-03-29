@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+	--green: #00ff22;
+	--blue: #00ffea;
+}
+body {
+    display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: var(--dark);
+}
+.container {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    margin-top: 50px;
+    h1 {
+        margin-bottom: 20px;
+        strong{
+            background-image: linear-gradient(to right, var(--pink), var(--purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+input {
+	flex: 1 1 0%;
+	background-color: var(--darker);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+	font-size: 1.25rem;
+}
+input::placeholder {
+	color: var(--grey);
+}
+button {
+	color: var(--pink);
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+button:active {
+	opacity: 0.6;
+}
+#show-movies {
+    max-width: 60%;
+    .container-show{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top:50px;
+        img{
+            margin-right: 90px;
+            border: 10px solid var(--darker);
+        }
+        .description{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h3{
+                color: #d9d9d9;
+                font-weight: normal;
+                .titles{
+                    font-weight: bold;
+                }
+                &:nth-last-child(1){
+                    font-size: 15px;
+                }
+            }
+            .YRL {
+                display: flex;
+                justify-content: space-between;
+                margin-top: -20px;
+                h3{
+                    margin-right: 20px;
+                    padding: 6px;
+                }
+                .year {
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+                .rate {
+                    color: black;
+                    background-image: linear-gradient(to right, var(--pink), var(--purple));
+                    -webkit-text-fill-color: black;
+                    border-radius: 10px;
+                }
+            }
+            .genre {
+                .genre1 {
+                    background-image: linear-gradient(to right, var(--darker), rgb(112, 112, 112));
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+            .title{
+                color:var(--pink);
+                font-size: 50px;
+                margin: 0;
+            }
+        }
+    }
+}

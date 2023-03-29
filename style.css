@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --dark: #374151;
+  --darker: #1F2937;
+  --darkest: #111827;
+  --grey: #6B7280;
+  --pink: #EC4899;
+  --purple: #8B5CF6;
+  --light: #EEE;
+  --green: #00ff22;
+  --blue: #00ffea;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  color: #FFF;
+  background-color: var(--dark);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+.container h1 strong {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--pink)), to(var(--purple)));
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input, button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: var(--light);
+  font-size: 1.25rem;
+}
+
+input::-webkit-input-placeholder {
+  color: var(--grey);
+}
+
+input:-ms-input-placeholder {
+  color: var(--grey);
+}
+
+input::-ms-input-placeholder {
+  color: var(--grey);
+}
+
+input::placeholder {
+  color: var(--grey);
+}
+
+button {
+  color: var(--pink);
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--pink)), to(var(--purple)));
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
+#show-movies {
+  max-width: 60%;
+}
+
+#show-movies .container-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+#show-movies .container-show img {
+  margin-right: 90px;
+  border: 10px solid var(--darker);
+}
+
+#show-movies .container-show .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#show-movies .container-show .description h3 {
+  color: #d9d9d9;
+  font-weight: normal;
+}
+
+#show-movies .container-show .description h3 .titles {
+  font-weight: bold;
+}
+
+#show-movies .container-show .description h3:nth-last-child(1) {
+  font-size: 15px;
+}
+
+#show-movies .container-show .description .YRL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -20px;
+}
+
+#show-movies .container-show .description .YRL h3 {
+  margin-right: 20px;
+  padding: 6px;
+}
+
+#show-movies .container-show .description .YRL .year {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#show-movies .container-show .description .YRL .rate {
+  color: black;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--pink)), to(var(--purple)));
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-text-fill-color: black;
+  border-radius: 10px;
+}
+
+#show-movies .container-show .description .genre .genre1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--darker)), to(#707070));
+  background-image: linear-gradient(to right, var(--darker), #707070);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#show-movies .container-show .description .title {
+  color: var(--pink);
+  font-size: 50px;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
